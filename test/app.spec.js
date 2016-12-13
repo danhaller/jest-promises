@@ -1,7 +1,9 @@
-var service = jest.mock('../src/service');
-var report = jest.mock('../src/report');
+jest.mock('../src/service');
+jest.mock('../src/report');
 
-app = require('../src/app');
+const service = require('../src/service');
+const report = require('../src/report');
+const app = require('../src/app');
 
 describe('app', () => {
 
